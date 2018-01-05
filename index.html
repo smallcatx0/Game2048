@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048小游戏</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="./defStyle.css" />
+
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
+	<script type="text/javascript" src="./sport.js"></script>
+	<script type="text/javascript" src="./UIshow.js"></script>
+
+</head>
+<body>
+	<header>
+		<h1>2048小游戏</h1>
+		<a class="newgameButton" href="javascript:NewGame();">NewGame</a>
+		<p>分数：<span id="score">0</span></p>
+
+	</header>
+	<div class="Gamebody">
+		<div class="Gametable">
+			<div class="Gameblock" id="cell-0-0"></div>
+			<div class="Gameblock" id="cell-0-1"></div>
+			<div class="Gameblock" id="cell-0-2"></div>
+			<div class="Gameblock" id="cell-0-3"></div>
+
+			<div class="Gameblock" id="cell-1-0"></div>
+			<div class="Gameblock" id="cell-1-1"></div>
+			<div class="Gameblock" id="cell-1-2"></div>
+			<div class="Gameblock" id="cell-1-3"></div>
+
+			<div class="Gameblock" id="cell-2-0"></div>
+			<div class="Gameblock" id="cell-2-1"></div>
+			<div class="Gameblock" id="cell-2-2"></div>
+			<div class="Gameblock" id="cell-2-3"></div>
+
+			<div class="Gameblock" id="cell-3-0"></div>
+			<div class="Gameblock" id="cell-3-1"></div>
+			<div class="Gameblock" id="cell-3-2"></div>
+			<div class="Gameblock" id="cell-3-3"></div>
+
+		</div>
+		<div id="GameControl">
+			<img src="./img/up.png" id="moveUp" />
+			<img src="./img/right.png" id="moveRight" />
+			<img src="./img/left.png" id="moveLeft" />
+			<img src="./img/down.png" id="moveDown" />
+		</div>
+	</div>
+<footer>
+	Copyright &copy; Powered by <a href="http://www.heykui.cn">heykui.cn </a><br />
+	<a href="http://weibo.com/u/5745226920"> cn小魁 </a>版权所有 <a href="https://git.oschina.net/smallcatx0/Game2048.git"><b>查看源码</b></a><br />
+	联系方式 QQ:1312308948
+	 </footer> 
+</body>
+</html>
